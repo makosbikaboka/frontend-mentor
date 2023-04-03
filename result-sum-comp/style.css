@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight:500;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-contanier{
+    display:flex;
+    flex-wrap: wrap;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.contanier{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 0 0 1.875rem 1.875rem;
+    display: flex;
+}
+
+.result-contanier{
+    width: 100vw;
+    padding: 1rem 2rem 2rem 2rem;
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+}
+
+h2 {
+    padding: 4px 0 24px 0;
+    color: hsl(241, 100%, 89%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.125rem;
+}
+
+.point-contanier{
+    margin: auto;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    padding: 1rem;
+    text-align: center;
+}
+
+.point-contanier h1 {
+    font-size: 3.44rem;
+    padding: 0 0 0.625rem 0;
+    margin-top: 1.75rem;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 700;
+}
+
+.point-contanier p{
+    font-size: 0.88rem;
+    line-height: 1rem;
+    color: hsl(244, 87%, 71%);
+}
+
+h3{
+    padding: 1.875rem 0 0.625rem 0;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.56rem;
+}
+
+header > p{
+    padding: 0.94rem 1.25rem 0.94rem 1.25rem;
+    font-size: 1.125rem;
+    line-height: 1.4;
+}
+
+.rating-contanier{
+    width: 100vw;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 70%);
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.title, .reaction, .memory, .verbal, .visual, .button{
+    width:calc(100vw - 30px);
+    padding: 1.25rem;
+    margin: 0 0 0.625rem 0;
+    border-radius: 0.625rem;
+}
+
+.title{
+    padding: 0.625rem 1.25rem 0.625rem 1.25rem;
+    font-weight: 800;
+    color:hsl(224, 30%, 27%)
+}
+
+.reaction p, .memory p, .verbal p, .visual p{
+    float: right;
+    color: hsl(204, 8%, 76%);
+}
+
+.reaction, .memory, .verbal, .visual, span, img{
+    overflow: auto;
+    vertical-align: middle;
+}
+
+img{
+    padding: 0 0.5rem 0 0;
+}
+
+.reaction, .memory, .verbal, .visual, .button{
+    width:calc(100vw - 60px);
+}
+
+.reaction{
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.score-title-react{
+    color: hsl(0, 100%, 67%, 0.8)!important;
+}
+
+.memory{
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.score-title-mem{
+    color: hsl(39, 100%, 56%, 0.8)!important;
+}
+
+.verbal{
+    background-color: hsla(166, 100%, 37%, 0.1);
+
+}
+
+.score-title-verb{
+    color: hsl(166, 100%, 37%, 0.8)!important; 
+}
+
+.visual{
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.score-title-vis{
+    color: hsl(234, 85%, 45%, 0.8)!important;
+}
+
+.first-score{
+    font-weight: 800;
+    color: hsl(224, 30%, 27%)!important;
+    vertical-align: baseline;
+}
+
+.button{
+    margin-top:0.875rem;
+    text-align: center;
+    border-radius: 2.5rem;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 30%, 27%);
+}
+
+.button:hover{
+    background-color: hsl(241, 81%, 54%);
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 375px){
+    body{
+        justify-content: center;
+    }   
+}
+
+@media only screen and (min-width: 375px){
+    .main-contanier{
+        border-radius: 30px;
+    }   
+}
+
+@media only screen and (min-width: 375px){
+    .result-contanier, .rating-contanier{
+        width: 19vw;
+    }   
+}
+
+
+@media only screen and (min-width: 375px){
+    .contanier{
+        height: 100%;
+        border-radius: 30px;
+        padding:0;
+        width: 19vw;
+    }   
+}
+
+@media only screen and (min-width: 375px){
+    .rating-contanier{
+        padding: 1.875rem 2.2rem 1.875rem 2.2rem;
+    }   
+}
+
+@media only screen and (min-width: 375px){
+    .title{
+        padding: 0.625rem 1.25rem 0.625rem 0;
+    }   
+}
+
+.attribution{
+    padding: 1rem;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
