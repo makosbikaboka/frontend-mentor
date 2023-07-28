@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" role="heading">
+<html lang="en">
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
 
@@ -23,36 +23,36 @@
     <article class="container">
         <div class="input-box">
           <div class="input-block">
-            <p class="input-block-title">DAY</p>
-            <input type="number" id="day" name="day" placeholder="DD" required="required" minlength="1" maxlength="2">
-            <p id="error_message_d"></p>
+            <p class="input-block-title" tabindex="-1">DAY</p>
+            <input type="number" id="day" name="day" placeholder="DD" required="required" minlength="1" maxlength="2"  tabindex="-1">
+            <p id="error_message_d"  tabindex="-1"></p>
           </div>  
           <div class="input-block" id="input-block-month">
-            <p class="input-block-title">MONTH</p>
-            <input type="number" id="month" name="month" placeholder="MM" required="required" minlength="1" maxlength="2">
-            <p id="error_message_m"></p>
+            <p class="input-block-title"  tabindex="-1">MONTH</p>
+            <input type="number" id="month" name="month" placeholder="MM" required="required" minlength="1" maxlength="2"  tabindex="-1">
+            <p id="error_message_m"  tabindex="-1"></p>
           </div>
           <div class="input-block">
-            <p class="input-block-title">YEAR</p>
-            <input type="number" id="year" name="year" placeholder="YYYY" required="required" minlength="4" maxlength="4">
-            <p id="error_message_y"></p>
+            <p class="input-block-title"  tabindex="-1">YEAR</p>
+            <input type="number" id="year" name="year" placeholder="YYYY" required="required" minlength="4" maxlength="4"  tabindex="-1">
+            <p id="error_message_y"  tabindex="-1"></p>
           </div>
         </div>
-        <div class="arrow-container">
-          <button type="submint" name="submit" onclick="age()" aria-label="arrow-container"><img src="assets/images/icon-arrow.svg" alt="arrow-icon.svg"></button>
+        <div class="arrow-container"  tabindex="-1">
+          <button type="submint" name="submit" onclick="age()" aria-label="arrow-container"  tabindex="-1"><img src="assets/images/icon-arrow.svg" alt="arrow-icon.svg"></button>
         </div>
         <div class="calc-result" id="age">
-          <p><span id="calc-years">- -</span> years</p>
-          <p><span id="calc-months">- -</span> months</p>
-          <p><span id="calc-days">- -</span> days</p>
+          <p tabindex="-1"><span id="calc-years" tabindex="-1">- -</span> years</p>
+          <p tabindex="-1"><span id="calc-months" tabindex="-1">- -</span> months</p>
+          <p tabindex="-1"><span id="calc-days" tabindex="-1">- -</span> days</p>
         </div>
       
     </article>
   </main>
 
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.  
-     Coded by <a href="https://github.com/makosbikaboka">Zoltan Nagy</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" tabindex="-1">Frontend Mentor</a>.  
+     Coded by <a href="https://github.com/makosbikaboka" tabindex="-1">Zoltan Nagy</a>.
   </footer>
 
 </body>
