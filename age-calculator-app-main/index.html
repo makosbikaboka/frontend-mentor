@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" role="heading">
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
 
@@ -16,35 +16,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">  
   
   <title>Frontend Mentor | Age calculator app</title>
-
+  
 </head>
 <body>
   <main>
     <article class="container">
         <div class="input-box">
           <div class="input-block">
-            <p class="input-block-title" id="p1" tabindex="0">DAY</p>
+            <p class="input-block-title">DAY</p>
             <input type="number" id="day" name="day" placeholder="DD" required="required" minlength="1" maxlength="2">
             <p id="error_message_d"></p>
           </div>  
           <div class="input-block" id="input-block-month">
-            <p class="input-block-title" tabindex="0">MONTH</p>
+            <p class="input-block-title">MONTH</p>
             <input type="number" id="month" name="month" placeholder="MM" required="required" minlength="1" maxlength="2">
             <p id="error_message_m"></p>
           </div>
           <div class="input-block">
-            <p class="input-block-title" tabindex="0">YEAR</p>
+            <p class="input-block-title">YEAR</p>
             <input type="number" id="year" name="year" placeholder="YYYY" required="required" minlength="4" maxlength="4">
-            <p id="error_message_y" tabindex="0"></p>
+            <p id="error_message_y"></p>
           </div>
         </div>
         <div class="arrow-container">
           <button type="submint" name="submit" onclick="age()" aria-label="arrow-container"><img src="assets/images/icon-arrow.svg" alt="arrow-icon.svg"></button>
         </div>
         <div class="calc-result" id="age">
-          <p tabindex="0"><span id="calc-years" tabindex="0">- -</span> years</p>
-          <p tabindex="0"><span id="calc-months" tabindex="0">- -</span> months</p>
-          <p tabindex="0"><span id="calc-days" tabindex="0">- -</span> days</p>
+          <p><span id="calc-years">- -</span> years</p>
+          <p><span id="calc-months">- -</span> months</p>
+          <p><span id="calc-days">- -</span> days</p>
         </div>
       
     </article>
